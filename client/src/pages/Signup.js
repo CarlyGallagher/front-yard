@@ -74,11 +74,11 @@ const Signup = () => {
                     type="password"
                     value={formState.password}
                     onChange={handleChange} />
-                  <button className="submit" type="submit">
+                  <button className="submit" type="submit" onSubmit={handleFormSubmit}>
                     Register
                   </button>
                   <br />
-                  <p class="forgot"><a href="#">Log in instead</a></p>
+                  <p class="forgot"><a href="login">Log in instead</a></p>
                 </form>
               </div>
             </div>
