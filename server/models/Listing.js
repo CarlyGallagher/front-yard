@@ -1,4 +1,5 @@
 const { Schema, model } = require("mongoose");
+const dateFormat = require("../utils/dateFormat");
 
 const listingSchema = new Schema({
   title: {
@@ -29,8 +30,8 @@ const listingSchema = new Schema({
     get: (timestamp) => dateFormat(timestamp),
   },
   username: {
-    type: String,
-    required: true
+    type: Schema.Types.ObjectId,
+    ref: "User",
   },
   isTaken: {
     type: Boolean,
