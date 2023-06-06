@@ -3,5 +3,30 @@
     "username": "Test User",
     "email": "test@user.com",
     "password": "password123"
+  },
+  {
+    "username": "Lamm9",
+    "email": "lamm@email.com",
+    "password": "password23"
+  },
+  {
+    "username": "DavidDontKnow",
+    "email": "ddk@email.com",
+    "password": "password123"
+  },
+  {
+    "username": "ChrisGom113",
+    "email": "chris@email.com",
+    "password": "password123"
+  },
+  {
+    "username": "CarlyGallagher",
+    "email": "carly@email.com",
+    "password": "password123"
+  },
+  {
+    "username": "aricoia",
+    "email": "ariana@email.com",
+    "password": "password123"
   }
 ]
