@@ -118,7 +118,6 @@ padding-left: 50px;
 padding-right: 70px;
 padding-bottom: 10px;
 padding-top: 10px;
-font-family: "Ubuntu", sans-serif;
 text-align: center;
 font-size: 13px;
 box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
@@ -157,8 +156,8 @@ padding: 100px 20vw;
 #blob {
 position: absolute;
 height: 650px;
-left: 390px;
-top: -60px;
+left: 43%;
+top: 60px;
 filter: drop-shadow(10px 20px 5px #42976a80);
 transition: left 0.5s, top 0.5s;
 z-index: -1;
@@ -213,7 +212,7 @@ padding-left: 50px;
 .logo img{
 height: 570px;
 width: 370px;
-top: -250px;
+top: 0px;
 left: 0px;
 position: relative;
 }
@@ -222,7 +221,7 @@ position: relative;
   position: absolute;
   top: -10px;
   left: -10px;
-  z-index: -1;
+  z-index: 0;
   filter: drop-shadow(10px 20px 5px #42976a80);
 }
 
