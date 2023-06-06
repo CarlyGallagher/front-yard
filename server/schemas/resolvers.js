@@ -62,7 +62,7 @@ const resolvers = {
         description,
         price,
         image,
-        location,
+        location
       });
       return listing;
     },
