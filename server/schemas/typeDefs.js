@@ -6,6 +6,8 @@ const typeDefs = gql`
     username: String
     email: String
     password: String
+    listings: [Listing]!
+    followers: [User]!
   }
 
   type Auth {
@@ -17,7 +19,7 @@ const typeDefs = gql`
     users: [User]
     user(username: String!): User
     me: User
-    followers: [User]
+    followers(username: String!): [User]
     listings: [Listing]
     listingIsTaken(_id: ID!): Boolean
   }
@@ -45,11 +47,13 @@ const typeDefs = gql`
     location: String
     createdAt: String
     username: String
+    isTaken: Boolean
   }
 
   type Query {
     listings: [Listing]
     listing(_id: ID!): Listing
+    listingIsTaken(_id: ID!): Boolean
   }
 
   type Mutation {

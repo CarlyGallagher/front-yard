@@ -5,10 +5,10 @@ const { signToken } = require("../utils/auth");
 const resolvers = {
   Query: {
     users: async () => {
-      return User.find();
+      return User.find().populate("listings", "followers");
     },
     user: async (parent, { username }) => {
-      return User.findOne({ username });
+      return User.findOne({ username }).populate("listings", "followers");
     },
     me: async (parent, args, context) => {
       if (context.user) {
@@ -48,7 +48,7 @@ const resolvers = {
     addFollower: async (parent, { username }) => {
       const user = await User.findOneAndUpdate(
         { username },
-        { $addToSet: { followers: username } },
+        { $addToSet: { followers: followerName } },
         { new: true },
       );
       return user;
