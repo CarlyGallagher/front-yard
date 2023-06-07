@@ -20,6 +20,18 @@ function Form() {
 
   };
 
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    alert(`You successfully posted ${title}`);
+    setTitle("");
+    setDescription("");
+    setPrice("");
+    setImage("");
+    setLocation("");
+    };
+
+
   return (
     <div>
       <form className="form">
