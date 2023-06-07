@@ -11,7 +11,7 @@ function Card({ listing, handleSave, handleClick }) {
 
         <section>
             {listing.map(listing => (
-                <div className="card">
+                <div className="card ">
                     <div className="Title" key={listing.id}>
                         <h1>{listing.title}</h1>
                     </div>
