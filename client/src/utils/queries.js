@@ -12,7 +12,7 @@ export const QUERY_USER = gql`
 
 export const QUERY_LISTINGS = gql`
   query getListing($username: String) {
-    listings(username: $username) {
+    listings() {
       _id
       title
       description
