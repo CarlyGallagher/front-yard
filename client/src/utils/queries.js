@@ -11,7 +11,7 @@ export const QUERY_USER = gql`
 `;
 
 export const QUERY_LISTINGS = gql`
-  query getListing() {
+  query listings {
     listings {
       _id
       title
