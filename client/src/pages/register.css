@@ -15,7 +15,7 @@ text-align: center;
 align-content: center;
 align-items: center;
 justify-content: center;
-top: -520px;
+top: -750px;
   left: -10px;
 position: relative;
 border-radius: 5px;
@@ -89,18 +89,36 @@ margin-bottom: 27px;
 border: 2px solid rgba(0, 0, 0, 0.18) !important;
 }
 
+.email {
+  width: 76%;
+color: rgb(38, 50, 56);
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgb(255, 255, 255);
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-bottom: 50px;
+margin-left: 46px;
+text-align: center;
+margin-bottom: 27px;
+}
+
 .submit {
 cursor: pointer;
 border-radius: 5em;
 color: #fff;
 background: linear-gradient(to right, #2795b0, #40fb50);
 border: 0;
-padding-left: 40px;
-padding-right: 40px;
+padding-left: 50px;
+padding-right: 70px;
 padding-bottom: 10px;
 padding-top: 10px;
-font-family: "Ubuntu", sans-serif;
-
+text-align: center;
 font-size: 13px;
 box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
 white-space: 10px;
@@ -138,8 +156,8 @@ padding: 100px 20vw;
 #blob {
 position: absolute;
 height: 650px;
-left: 390px;
-top: -60px;
+left: 43%;
+top: 60px;
 filter: drop-shadow(10px 20px 5px #42976a80);
 transition: left 0.5s, top 0.5s;
 z-index: -1;
@@ -194,8 +212,8 @@ padding-left: 50px;
 .logo img{
 height: 570px;
 width: 370px;
-top: -250px;
-left: -490px;
+top: 0px;
+left: 0px;
 position: relative;
 }
 
@@ -203,12 +221,13 @@ position: relative;
   position: absolute;
   top: -10px;
   left: -10px;
+  z-index: 0;
   filter: drop-shadow(10px 20px 5px #42976a80);
 }
 
 #bottom {
   position: absolute;
-  bottom: 580px;
+  bottom: 0px;
   right: -10px;
  z-index: -1;
 }
@@ -223,7 +242,7 @@ h3 {
 .fence img{
   height: 300px;
   width:550px;
- bottom:580px;
+ bottom:0px;
  right:0;
   position: absolute;
 
