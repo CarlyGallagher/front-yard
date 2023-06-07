@@ -42,27 +42,6 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            {!loggedIn() ? (
-              <>
-                <li>
-                  <Link to="/login">Login</Link>
-                </li>
-                <li>
-                  <Link to="/signup">Signup</Link>
-                </li>
-              </>
-            ) : (
-              <li>
-                <a href="/#" onClick={logout}>
-                  Log Out
-                </a>
-              </li>
-            )}
-          </ul>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
