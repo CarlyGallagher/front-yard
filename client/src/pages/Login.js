@@ -5,7 +5,7 @@ import { LOGIN_USER } from "../utils/mutations";
 import { login } from "../utils/auth";
 import "./login.css"
 
-const Login = (props) => {
+const Login = () => {
   const [formState, setFormState] = useState({ email: "", password: "" });
   const [loginMutation, { error, data }] = useMutation(LOGIN_USER);
 
@@ -76,7 +76,7 @@ const Login = (props) => {
                 <button className="submit" type="submit">
                   Submit
                 </button>
-                <p class="forgot"><a href="signup">Create an account</a></p>
+                <p class="forgot"><Link to="/signup">Create an account</Link></p>
               </form>
             </div>
           </div>

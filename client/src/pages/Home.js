@@ -1,28 +1,19 @@
 import React from "react";
-import Signup from "./Signup";
-import Login from "./Login";
 import { loggedIn, logout } from "../utils/auth";
-
+import { useNavigate, Navigate } from "react-router-dom";
 
 const Home = () => {
-  return <main>
-    {!loggedIn() ? (
-              <>
-                <li>
-                <Signup />
-                </li>
-                <li>
-                <Login />
-                </li>
-              </>
-            ) : (
-              <li>
-                <a href="/#" onClick={logout}>
-                  Log Out
-                </a>
-              </li>
-            )}
-  </main>;
+  console.log(loggedIn());
+  if (!loggedIn()) {
+    return <Navigate to="/signup" />;
+  }
+  return (<main>
+    <li>
+      <a href="/#" onClick={logout}>
+        Log Out
+      </a>
+    </li>
+  </main>);
 };
 
 export default Home;
