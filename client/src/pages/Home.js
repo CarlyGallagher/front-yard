@@ -9,16 +9,8 @@ const Home = () => {
   const listing = data?.listings || [];
   console.log(listing)
 
-  return <main>This is the home page
-    <h2>Listings</h2>
-
-    <Card
-      listings={listing}
-    />
-
-
-
-
+  return <main>
+    <h1>Home</h1>
   </main>;
 
 };
