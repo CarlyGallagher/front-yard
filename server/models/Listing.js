@@ -19,7 +19,7 @@ const listingSchema = new Schema({
     type: String,
     required: true
   },
-  location: {
+  zip: {
     type: String,
     required: true,
     trim: true

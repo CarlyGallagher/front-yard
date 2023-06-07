@@ -33,7 +33,7 @@ const typeDefs = gql`
       description: String!
       price: Float!
       image: String!
-      location: String!
+      zip: String!
     ): Listing
     removeListing(_id: ID!): Listing
   }
@@ -44,7 +44,7 @@ const typeDefs = gql`
     description: String
     price: Float
     image: String
-    location: String
+    zip: String
     createdAt: String
     username: String
     isTaken: Boolean
@@ -62,7 +62,7 @@ const typeDefs = gql`
       description: String!
       price: Float!
       image: String!
-      location: String!
+      zip: String!
     ): Listing
     updateListing(
       _id: ID!
@@ -70,7 +70,7 @@ const typeDefs = gql`
       description: String!
       price: Float!
       image: String!
-      location: String!
+      zip: String!
     ): Listing
     removeListing(_id: ID!): Listing
   }

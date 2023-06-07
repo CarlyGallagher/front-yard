@@ -32,7 +32,7 @@ function Card({ listing, handleSave, handleClick }) {
                                 <strong>Price:</strong> {listing.price}
                             </li>
                             <li>
-                                <strong>Location:</strong> {listing.location}
+                                <strong>Location:</strong> {listing.zip}
                             </li>
                         </ul>
                         <div >

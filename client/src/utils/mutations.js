@@ -30,21 +30,21 @@ export const ADD_LISTING = gql`
       $description: String!
       $price: Float!
       $image: String!
-      $location: String!
+      $zip: String!
     ) {
       addListing(
         title: $title
         description: $description
         price: $price
         image: $image
-        location: $location
+        zip: $zip
       ) {
         _id
         title
         description
         price
         image
-        location
+        zip
         createdAt
         username
       }
@@ -58,7 +58,7 @@ export const UPDATE_LISTING = gql`
     $description: String!
     $price: Float!
     $image: String!
-    $location: String!
+    $zip: String!
   ) {
     updateListing(
       _id: $_id
@@ -66,14 +66,14 @@ export const UPDATE_LISTING = gql`
       description: $description
       price: $price
       image: $image
-      location: $location
+      zip: $zip
     ) {
       _id
       title
       description
       price
       image
-      location
+      zip
       createdAt
       username
     }
@@ -88,7 +88,7 @@ export const REMOVE_LISTING = gql`
       description
       price
       image
-      location
+      zip
       createdAt
       username
     }
