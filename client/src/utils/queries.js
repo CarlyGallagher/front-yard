@@ -18,7 +18,7 @@ export const QUERY_LISTINGS = gql`
       description
       price
       image
-      location
+      zip
       createdAt
       username
     }
@@ -33,7 +33,7 @@ export const QUERY_SINGLE_LISTING = gql`
       description
       price
       image
-      location
+      zip
       createdAt
       username
     }
