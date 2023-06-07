@@ -10,7 +10,7 @@ const resolvers = {
     user: async (parent, { username }) => {
       return User.findOne({ username }).populate("listings", "followers");
     },
-    me: async (parent, args, context) => {
+    me: async (parent, context) => {
       if (context.user) {
         return User.findOne({ _id: context.user._id });
       }
@@ -19,7 +19,7 @@ const resolvers = {
     followers: async (parent, { username }) => {
       return User.findOne({ username }).populate("followers");
     },
-    listings: async () => {
+    listings: async (parent) => {
       return Listing.find();
     },
     listing: async (parent, { _id }) => {
