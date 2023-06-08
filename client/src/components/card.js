@@ -1,9 +1,10 @@
 import React from "react";
+import "../pages/listings.css";
 // TODO: create handleSave and handleClick functions in utils folder
 
 function Card({ listing, handleSave, handleClick }) {
     if (!listing) {
-        return <div>No listings</div>;
+        return <div className="card">No listings</div>;
     }
 
 

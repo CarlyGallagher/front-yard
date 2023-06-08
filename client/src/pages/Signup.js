@@ -55,9 +55,9 @@ const Signup  = () => {
           </p>
         ) : (
           <section className="main">
-            <div className="box">
+           <p className="sign">Create Account</p>
               <div className="card">
-                <p className="sign">Create Account</p>
+        
                 <form className="form1" onSubmit={handleFormSubmit}>
                   <input className="un" placeholder="Your username"
                     name="username"
@@ -81,17 +81,17 @@ const Signup  = () => {
                   <p className="forgot"><Link to="/login">Log in instead</Link></p>
                 </form>
               </div>
-            </div>
-
+          
+            <svg id="bottom" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 900 675" width="900" height="575" version="1.1"><g transform="translate(880.5085219938994 669.3218269157132)"><path d="M157.9 -230C212.7 -177.5 270.9 -142.2 287.6 -92.9C304.3 -43.7 279.6 19.6 249.6 71.5C219.5 123.4 184.1 164.1 141.6 218.1C99.1 272.1 49.6 339.6 -7.4 349.8C-64.5 360.1 -128.9 313.1 -163.5 256.5C-198 199.9 -202.7 133.6 -219.9 73.2C-237.1 12.8 -266.9 -41.8 -247.9 -74.4C-228.8 -106.9 -160.9 -117.5 -111.5 -171.7C-62 -226 -31 -323.9 10.3 -338C51.5 -352.2 103.1 -282.5 157.9 -230" fill="#33ceaa" /></g></svg>
+      <div className="fence">
+        <img src="/FYFL-no-text.png" alt="fence.logo" />
+      </div>
           </section>)}
 
         {error && <div>{error.message}</div>}
       </div>
-      <svg id="bottom" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 900 675" width="900" height="575" version="1.1"><g transform="translate(880.5085219938994 669.3218269157132)"><path d="M157.9 -230C212.7 -177.5 270.9 -142.2 287.6 -92.9C304.3 -43.7 279.6 19.6 249.6 71.5C219.5 123.4 184.1 164.1 141.6 218.1C99.1 272.1 49.6 339.6 -7.4 349.8C-64.5 360.1 -128.9 313.1 -163.5 256.5C-198 199.9 -202.7 133.6 -219.9 73.2C-237.1 12.8 -266.9 -41.8 -247.9 -74.4C-228.8 -106.9 -160.9 -117.5 -111.5 -171.7C-62 -226 -31 -323.9 10.3 -338C51.5 -352.2 103.1 -282.5 157.9 -230" fill="#33ceaa" /></g></svg>
-      <div className="fence">
-        <img src="/FYFL-no-text.png" alt="fence.logo" />
-      </div>
     </main>
+    
   );
 };
 

@@ -9,7 +9,7 @@
   .card {
   background-color: #000000;
   width: 350px;
-  height: 470px;
+  height: 570px;
   box-shadow: 10px 11px 35px 9px rgba(108, 233, 189, 0.646);
   text-align: center;
   align-content: center;
@@ -19,16 +19,16 @@
     left: -10px;
   position: relative;
   border-radius: 5px;
+  display: inline-block;
   
   }
   
-  h1 {
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 30px;
-  padding-top: 40px;
-  padding-left: 115px;
-  }
+h1 {
+  color: #fff;
+  font-size: medium;
+  justify-content: center;
+  text-align: center;
+}
   
   .sign {
   padding-top: 40px;
@@ -132,7 +132,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 20vw;
+ 
   }
   
   #blob {
@@ -194,8 +194,8 @@
   .logo img{
   height: 570px;
   width: 370px;
-  top: -250px;
-  left: 0px;
+  top: -200px;
+  left: -500px;
   position: relative;
   }
   
@@ -208,7 +208,7 @@
   
   #bottom {
     position: absolute;
-    bottom: 580px;
+   top:150px;
     right: -10px;
    z-index: -1;
   }
@@ -222,8 +222,8 @@
   
   .fence img{
     height: 300px;
-   bottom:580px;
-   right:0;
+    top:415px;
+    right: -10px;
     position: absolute;
   
   }
