@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "title": "My old mattress",
     "description": "I don't need it anymore.",
     "price": 1,
@@ -9,6 +10,7 @@
     "isTaken": false
   },
   {
+    "id": "2",
     "title": "Dis dresser",
     "description": "Someone take this dresser.",
     "price": 1,
@@ -18,6 +20,7 @@
     "isTaken": false
   },
   {
+    "id": "3",
     "title": "Go kart",
     "description": "My old ride from the 90s.",
     "price": 1,
@@ -27,6 +30,7 @@
     "isTaken": false
   },
   {
+    "id": "4",
     "title": "Ivo",
     "description": "My friend Ivo.",
     "price": 1,
