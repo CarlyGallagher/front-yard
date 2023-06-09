@@ -12,9 +12,9 @@ const Home = () => {
   }
   return (<main>
     <li>
-      <Link to="/#" onClick={logout}>
+      <a href="/signup" onClick={logout}>
         Log Out
-      </Link>
+      </a>
     </li>
     <li>
       <Link to="/listings">
