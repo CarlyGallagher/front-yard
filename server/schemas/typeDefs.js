@@ -8,6 +8,7 @@ const typeDefs = gql`
     password: String
     listings: [Listing]!
     followers: [User]!
+    reviews: [Review]!
   }
 
   type Auth {
@@ -93,6 +94,13 @@ const typeDefs = gql`
     removeReview(_id: ID!): Review
   }
 
+  type Query {
+    followers: [User]
+  }
+
+  type Mutation {
+    addFollower(username: String!): User
+  }
 
 `;
 
