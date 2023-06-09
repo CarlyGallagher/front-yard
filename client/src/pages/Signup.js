@@ -76,7 +76,7 @@ const Signup = () => {
           </p>
         ) : (
           <section className="main">
-            <h2 className="sign">Create Account</h2>
+        
             <div className="card">
               <form className="form1" onSubmit={handleFormSubmit}>
                 <input

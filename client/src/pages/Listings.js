@@ -9,7 +9,9 @@ const Listings = () => {
 
   return (
     <section>
-      <h1>Listings</h1>
+  
+      <div class="logo"> <img src="/SIX_A740A84A-04FC-4CC6-9EA0-FF579F6ACC20.PNG" alt="" />
+       </div>
       <svg
         id="corner"
         xmlns="http://www.w3.org/2000/svg"
@@ -26,6 +28,7 @@ const Listings = () => {
           />
         </g>
       </svg>
+  
 
       <Card listings={listings} />
     </section>
