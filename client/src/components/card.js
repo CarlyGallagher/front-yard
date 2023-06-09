@@ -1,17 +1,17 @@
 import React from "react";
 // TODO: create handleSave and handleClick functions in utils folder
 import { handleSave, handleClick } from "../utils/listings";
-function Card({ listing }) {
-    if (!listing) {
+function Card({ listings }) {
+    if (!listings) {
         return <div>No listings</div>;
     }
 
-
+    console.log(listings);
     return (
 
         <section>
-            {listing.map(listing => (
-                <div key={listing.id} className="card " id={listing.id}>
+            {listings.map(listing => (
+                <div key={listing._id} className="card" id={listing._id}>
                     <div className="Title" >
                         <h1>{listing.title}</h1>
                     </div>
@@ -19,8 +19,7 @@ function Card({ listing }) {
                         <img
                             alt={listing.title}
                             src={listing.image}
-                            id={listing.id}
-                            onClick={() => handleClick(listing.id)}
+                            onClick={() => handleClick(listing._id)}
                         />
                     </div>
                     <div className="content">
@@ -41,7 +40,7 @@ function Card({ listing }) {
                         </div>
                     </div>
                     <div className="card-footer">
-                        <button type="button" className="btn btn-success" onClick={() => handleSave(listing.id)}>Reserve</button>
+                        <button type="button" className="btn btn-success" onClick={() => handleSave(listing._id)}>Reserve</button>
                     </div>
                 </div>
             ))
