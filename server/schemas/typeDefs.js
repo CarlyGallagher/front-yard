@@ -8,6 +8,7 @@ const typeDefs = gql`
     password: String
     listings: [Listing]!
     followers: [User]!
+    reviews: [Review]!
   }
 
   type Auth {
