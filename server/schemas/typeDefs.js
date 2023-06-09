@@ -94,12 +94,8 @@ const typeDefs = gql`
     removeReview(_id: ID!): Review
   }
 
-  type followers {
-    username: String
-  }
-
   type Query {
-    followers: [followers]
+    followers: [User]
   }
 
   type Mutation {
