@@ -19,8 +19,9 @@ const resolvers = {
     followers: async (parent, { username }) => {
       return User.findOne({ username }).populate("followers");
     },
-    listings: async (parent) => {
-      return Listing.find();
+    listings: async (parent, { zip }) => {
+      const params = !zip ? {} : { zip }
+      return Listing.find(params);
     },
     listing: async (parent, { _id }) => {
       const listing = Listing.findOne({ _id });

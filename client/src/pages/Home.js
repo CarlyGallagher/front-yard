@@ -10,20 +10,9 @@ const Home = () => {
   if (!loggedIn()) {
     return <Navigate to="/signup" />;
   }
-  return (<main>
-    <li>
-      <a href="/#" onClick={logout}>
-        Log Out
-      </a>
-    </li>
-    <li>
-      <a href="/listings">
-        Listings
-      </a>
-    </li>
-
-
-  </main>);
+  return (
+    < Navigate to="/listings" />
+  );
 
 
 

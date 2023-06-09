@@ -51,7 +51,7 @@ const typeDefs = gql`
   }
 
   type Query {
-    listings: [Listing]
+    listings(zip:String): [Listing]
     listing(_id: ID!): Listing
     listingIsTaken(_id: ID!): Boolean
   }

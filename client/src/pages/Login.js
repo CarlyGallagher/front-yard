@@ -54,10 +54,10 @@ const Login = () => {
           Success! You may now head <Link to="/">back to the homepage.</Link>
         </p>
       ) : (
-        <section classNameName="main">
+        <section className="main">
           <div className="box">
             <div className="card">
-              <form classNameName="form1" onSubmit={handleFormSubmit}>
+              <form className="form1" onSubmit={handleFormSubmit}>
                 <input className="un"
                   placeholder="email"
                   name="email"
@@ -73,7 +73,7 @@ const Login = () => {
                   value={formState.password}
                   onChange={handleChange}
                 />
-                <button classNameName="submit" type="submit">
+                <button className="submit" type="submit">
                   Submit
                 </button>
                 <p className="forgot"><Link to="/signup">Create an account</Link></p>
