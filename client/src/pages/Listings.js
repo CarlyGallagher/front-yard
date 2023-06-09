@@ -23,9 +23,9 @@ const Listings = () => {
 
   return (
     <section>
-  
+
       <div class="logo"> <img src="/SIX_A740A84A-04FC-4CC6-9EA0-FF579F6ACC20.PNG" alt="" />
-       </div>
+      </div>
       <svg
         id="corner"
         xmlns="http://www.w3.org/2000/svg"
@@ -42,10 +42,10 @@ const Listings = () => {
           />
         </g>
       </svg>
-  
 
-      <Card listings={listings} />
       <SearchBar search={search} setSearch={setSearch} />
+      <Card listings={listings} />
+
     </section>
   );
 };
