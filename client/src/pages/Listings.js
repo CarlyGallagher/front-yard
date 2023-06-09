@@ -7,12 +7,12 @@ const Listings = () => {
   const { data } = useQuery(QUERY_LISTINGS);
   const listings = data?.listings || [];
 
-    return (
-      <section>
-        <h1>Listings</h1>
-        <Card listing={listings} />
-      </section>
-    );
+  return (
+    <section>
+      <h1>Listings</h1>
+      <Card listings={listings} />
+    </section>
+  );
 
 };
 

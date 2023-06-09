@@ -3,9 +3,10 @@ import { loggedIn, logout } from "../utils/auth";
 import { useNavigate, Navigate } from "react-router-dom";
 
 
+
 const Home = () => {
 
-  
+
   if (!loggedIn()) {
     return <Navigate to="/signup" />;
   }
@@ -15,10 +16,17 @@ const Home = () => {
         Log Out
       </a>
     </li>
+    <li>
+      <a href="/listings">
+        Listings
+      </a>
+    </li>
+
+
   </main>);
 
 
- 
+
 };
 
 export default Home;
