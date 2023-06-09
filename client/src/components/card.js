@@ -1,4 +1,5 @@
 import React from "react";
+import "../pages/listings.css";
 // TODO: create handleSave and handleClick functions in utils folder
 import { handleSave, handleClick } from "../utils/listings";
 function Card({ listings }) {
@@ -48,7 +49,5 @@ function Card({ listings }) {
         </section>
     );
 }
-
-
 
 export default Card;
