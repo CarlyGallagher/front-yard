@@ -11,8 +11,8 @@ export const QUERY_USER = gql`
 `;
 
 export const QUERY_LISTINGS = gql`
-  query listings {
-    listings {
+  query listings($zip: String) {
+    listings(zip: $zip) {
       _id
       title
       description
@@ -47,6 +47,15 @@ export const QUERY_REVIEWS = gql`
       reviewText
       reviewAuthor
       createdAt
+    }
+  }
+`;
+
+export const SEARCH_QUERY = gql`
+  query searchQuery($searchQuery: String) {
+    searchQuery(searchQuery: $searchQuery) {
+      title
+      description
     }
   }
 `;

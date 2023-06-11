@@ -10,6 +10,7 @@ const Home = () => {
   if (!loggedIn()) {
     navigate("/signup");
   }
+
   return (<main>
     <li>
       <a href="/signup" onClick={logout}>
