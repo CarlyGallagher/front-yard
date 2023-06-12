@@ -7,6 +7,11 @@
   list-style-type: none;
 }
 
+.title {
+  text-align: center;
+  margin-top: 5%;
+}
+
 @media screen and (max-width: 600px) {
   .card-container {
     margin-right: 10%;

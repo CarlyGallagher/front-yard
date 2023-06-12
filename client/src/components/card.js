@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Divider } from "semantic-ui-react";
+import { Grid, Divider, Header } from "semantic-ui-react";
 
 import { handleSave, handleClick } from "../utils/listings";
 
@@ -16,8 +16,8 @@ function Card({ listings }) {
       {listings.map((listing) => (
         <Grid.Column computer={5} mobile={12} className="card-container">
           <div key={listing._id} className="card" id={listing._id}>
-            <div className="Title">
-              <h1>{listing.title}</h1>
+            <div className="title">
+              <Header as='h1'>{listing.title}</Header>
             </div>
             <div className="img-container">
               <img

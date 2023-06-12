@@ -48,6 +48,7 @@ const Listings = () => {
       </section>
           <Card listings={listings} />
       <AddButton />
+      <div id="btm"></div>
     </div>
   );
 };

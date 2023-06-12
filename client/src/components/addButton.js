@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import AddListing from "./addListing";
-import { Button, Icon, Modal } from "semantic-ui-react";
+import { Button, Modal } from "semantic-ui-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
 import "../styles/addButton.css";

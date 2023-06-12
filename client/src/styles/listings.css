@@ -7,6 +7,10 @@ body {
   color: white !important;
 }
 
+#btm {
+  padding-bottom: 20%;
+}
+
 .blobs {
   position: relative;
   grid-auto-rows: auto;
@@ -50,7 +54,7 @@ button {
   position: absolute;
   background-color: rgb(0, 91, 63);
   border-radius: 25px;
-  left: 40%;
+  left: 10%;
   top: 10%;
   margin: none;
   padding: 1px 15px;
@@ -74,5 +78,9 @@ button {
 @media screen and (max-width: 600px) {
   .listSearch {
     left: 15%;
+  }
+
+  .card {
+    box-shadow: none;
   }
 }
