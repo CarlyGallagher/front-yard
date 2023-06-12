@@ -16,8 +16,6 @@ export const QUERY_LISTINGS = gql`
       _id
       title
       description
-      price
-      image
       zip
       createdAt
       username

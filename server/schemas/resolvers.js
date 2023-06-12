@@ -56,13 +56,11 @@ const resolvers = {
     },
     addListing: async (
       parent,
-      { title, description, price, image, zip },
+      { title, description, zip },
     ) => {
       const listing = await Listing.create({
         title,
         description,
-        price,
-        image,
         zip
       });
       return listing;

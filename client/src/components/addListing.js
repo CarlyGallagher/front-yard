@@ -7,7 +7,7 @@ export default function AddListing () {
   const [formState, setFormState] = useState({
     title: "",
     description: "",
-    price: 0,
+    price: 0.00,
     zip: "",
   });
 
@@ -69,16 +69,6 @@ export default function AddListing () {
             name="description"
             type="description"
             id="description"
-            onChange={handleChange}
-          />
-        </div>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="price">Price:</label>
-          <input
-            placeholder="Price"
-            name="price"
-            type="price"
-            id="price"
             onChange={handleChange}
           />
         </div>
