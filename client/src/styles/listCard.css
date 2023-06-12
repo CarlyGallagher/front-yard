@@ -1,0 +1,14 @@
+.listing-container {
+  justify-content: center;
+  text-align: center;
+}
+
+.card-container ul {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 600px) {
+  .card-container {
+    margin-right: 10%;
+  }
+}
