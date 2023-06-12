@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import AddListing from "./addListing";
 import { Button, Icon, Modal } from "semantic-ui-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
 import "../styles/addButton.css";
 
 export default function AddButton() {
@@ -17,12 +19,9 @@ export default function AddButton() {
     <div className="add-btn">
       <Modal
         trigger={
-          <Button className="add-btn-stuff" animated="fade" onClick={handleClick}>
+          <Button className="add-btn-stuff" onClick={handleClick}>
             <Button.Content visible className="add-btn-body">
-              <Icon name="add circle" />
-            </Button.Content>
-            <Button.Content hidden>
-              <Icon name="plus" />
+              <FontAwesomeIcon icon={faCirclePlus} />
             </Button.Content>
           </Button>
         }

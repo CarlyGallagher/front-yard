@@ -32,8 +32,6 @@ const typeDefs = gql`
     addListing(
       title: String!
       description: String!
-      price: Float!
-      image: String!
       zip: String!
     ): Listing
     removeListing(_id: ID!): Listing
@@ -43,7 +41,6 @@ const typeDefs = gql`
     _id: ID
     title: String
     description: String
-    price: Float
     image: String
     zip: String
     createdAt: String
@@ -61,16 +58,16 @@ const typeDefs = gql`
     addListing(
       title: String!
       description: String!
-      price: Float!
-      image: String!
+      price: Float
+      image: String
       zip: String!
     ): Listing
     updateListing(
       _id: ID!
       title: String!
       description: String!
-      price: Float!
-      image: String!
+      price: Float
+      image: String
       zip: String!
     ): Listing
     removeListing(_id: ID!): Listing

@@ -28,22 +28,16 @@ export const ADD_LISTING = gql`
     mutation addListing(
       $title: String!
       $description: String!
-      $price: Float!
-      $image: String!
       $zip: String!
     ) {
       addListing(
         title: $title
         description: $description
-        price: $price
-        image: $image
         zip: $zip
       ) {
         _id
         title
         description
-        price
-        image
         zip
         createdAt
         username
@@ -56,23 +50,17 @@ export const UPDATE_LISTING = gql`
     $_id: ID!
     $title: String!
     $description: String!
-    $price: Float!
-    $image: String!
     $zip: String!
   ) {
     updateListing(
       _id: $_id
       title: $title
       description: $description
-      price: $price
-      image: $image
       zip: $zip
     ) {
       _id
       title
       description
-      price
-      image
       zip
       createdAt
       username

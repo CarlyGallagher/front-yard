@@ -24,7 +24,9 @@ const Listings = () => {
 
   return (
     <div>
-      <section>
+      {" "}
+      <SearchBar search={search} setSearch={setSearch} />
+      <section className="blobs">
         <div className="logo">
           {" "}
           <img src="/SIX_A740A84A-04FC-4CC6-9EA0-FF579F6ACC20.PNG" alt="" />
@@ -45,11 +47,13 @@ const Listings = () => {
             />
           </g>
         </svg>
-
-        <SearchBar search={search} setSearch={setSearch} />
-        <Card listings={listings} />
-        <Divider vertical></Divider>
       </section>
+      <Grid columns={3} divided>
+        <Grid.Column>
+          <Card listings={listings} />
+          <Divider vertical></Divider>
+        </Grid.Column>
+      </Grid>
       <AddButton />
     </div>
   );

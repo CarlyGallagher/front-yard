@@ -16,7 +16,7 @@ const SearchBar = ({ search, setSearch }) => {
 
 
     return (
-        <div>
+        <div className="listSearch">
             <form className="search">
                 <div className="form-group">
                     <label htmlFor="search">Search:</label>
