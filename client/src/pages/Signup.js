@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 import { useMutation } from "@apollo/client";
 import { ADD_USER } from "../utils/mutations";
 
+import { Button, Form } from "semantic-ui-react";
+
 import { login } from "../utils/auth";
-import "./register.css";
+import "../styles/register.css";
 
 const Signup = () => {
   const [formState, setFormState] = useState({
@@ -76,45 +78,51 @@ const Signup = () => {
           </p>
         ) : (
           <section className="main">
-        
             <div className="card">
-              <form className="form1" onSubmit={handleFormSubmit}>
-                <input
-                  className="un"
-                  placeholder="Your username"
-                  name="username"
-                  type="text"
-                  value={formState.name}
-                  onChange={handleChange}
-                />
-                <input
-                  className="email"
-                  placeholder="Your email"
-                  name="email"
-                  type="email"
-                  value={formState.email}
-                  onChange={handleChange}
-                />
-                <input
-                  className="pass"
-                  placeholder="******"
-                  name="password"
-                  type="password"
-                  value={formState.password}
-                  onChange={handleChange}
-                />
-                <button
+              <Form className="form1" onSubmit={handleFormSubmit}>
+                <Form.Field className="field">
+                  <input
+                    className="input"
+                    placeholder="Your username"
+                    name="username"
+                    type="text"
+                    value={formState.name}
+                    onChange={handleChange}
+                  />
+                </Form.Field>
+                <Form.Field className="field">
+                  <input
+                    className="input"
+                    placeholder="Your email"
+                    name="email"
+                    type="email"
+                    value={formState.email}
+                    onChange={handleChange}
+                  />
+                </Form.Field>
+                <Form.Field className="field">
+                  <input
+                    className="input"
+                    placeholder="password"
+                    name="password"
+                    type="password"
+                    value={formState.password}
+                    onChange={handleChange}
+                  />
+                </Form.Field>
+                <Button
                   className="submit"
                   type="submit"
                   onSubmit={handleFormSubmit}
                 >
                   Register
-                </button>
+                </Button>
                 <br />
-                <p className="forgot">
-                  <Link to="/login">Log in instead</Link>
-                </p>
-              </form>
+                <Link to="/login">
+                  <p className="forgot"></p>
+                  Log in instead
+                </Link>
+              </Form>
             </div>
 
             <svg

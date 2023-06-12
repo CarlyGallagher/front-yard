@@ -1,10 +1,10 @@
 * {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif !important;
 }
 
 body {
-  background-color: rgb(0, 0, 0);
-  color: white;
+  background-color: rgb(0, 0, 0) !important;
+  color: white !important;
 }
 
 section {
@@ -32,7 +32,7 @@ section {
   width: 280px;
   height: 370px;
   box-shadow: 2px 5px 5px 9px rgba(108, 233, 189, 0.646);
-top:auto;
+  top: auto;
 }
 
 button {
