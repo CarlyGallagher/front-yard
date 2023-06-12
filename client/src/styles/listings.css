@@ -59,6 +59,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Gill Sans Bold", sans-serif !important;
 }
 
 .form-control {

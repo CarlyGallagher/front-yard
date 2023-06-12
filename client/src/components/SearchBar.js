@@ -26,7 +26,7 @@ const SearchBar = ({ search, setSearch }) => {
                         name="search"
                         type="text"
                         className="form-control"
-                        placeholder="Search for a listing"
+                        placeholder="Search by ZIP"
                         id="search"
                     />
                 </div>
