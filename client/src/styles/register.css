@@ -3,14 +3,14 @@
 }
 
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0) !important;
 }
 
 .card {
-  background-color: #000000;
+  background-color: #000000 !important;
   width: 350px;
   height: 570px;
-  box-shadow: 10px 11px 35px 9px rgba(108, 233, 189, 0.646);
+  box-shadow: 10px 11px 35px 9px rgba(108, 233, 189, 0.646) !important;
   text-align: center;
   align-content: center;
   align-items: center;
@@ -18,23 +18,24 @@ body {
   display: block;
   position: relative;
   border-radius: 5px;
+  top: 5% !important;
 }
 
 .box {
   position: relative;
   top: -40px;
   height: 400px;
-  background: #ffffff;
+  background: #ffffff !important;
   border-radius: 5px;
   align-content: center;
   align-items: center;
   justify-content: center;
   display: block;
-  box-shadow: 10px 11px 35px 9px rgba(108, 233, 189, 0.646);
+  box-shadow: 10px 11px 35px 9px rgba(108, 233, 189, 0.646) !important;
 }
 
 h1 {
-  color: #ffffff;
+  color: #ffffff !important;
   font-weight: bold;
   font-size: 30px;
   padding-top: 40px;
@@ -42,56 +43,40 @@ h1 {
 }
 
 h2 .sign {
-  color: #ffffff;
+  color: #ffffff !important;
   font-weight: bold;
   font-size: 15px;
   padding-top: 40px;
   padding-left: 115px;
 }
 
-.un {
+.input {
   width: 76%;
-  color: rgb(38, 50, 56);
+  color: rgb(38, 50, 56) !important;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 1px;
-  background: rgb(255, 255, 255);
+  background: rgb(255, 255, 255) !important;
   padding: 10px 20px;
   border: none;
   border-radius: 20px;
   outline: none;
   box-sizing: border-box;
-  border: 2px solid rgba(0, 0, 0, 0.02);
+  border: 2px solid rgba(0, 0, 0, 0.02) !important;
   margin-bottom: 50px;
   margin-left: 46px;
   text-align: center;
   margin-bottom: 27px;
 }
 
-form.form1 {
-  align-content: center;
-  padding-right: 50px;
-  background-color: rgb(0, 0, 0);
+.form1 {
+  background-color: rgb(0, 0, 0) !important;
   display: block;
 }
 
-.pass {
-  width: 76%;
-  color: rgb(38, 50, 56);
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 1px;
-  background: rgb(255, 255, 255);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 20px;
-  outline: none;
-  box-sizing: border-box;
-  border: 2px solid rgba(0, 0, 0, 0.02);
-  margin-bottom: 50px;
-  margin-left: 46px;
-  text-align: center;
-  margin-bottom: 27px;
+.field {
+  background-color: rgb(0, 0, 0) !important;
+  display: block;
 }
 
 .un:focus,
@@ -99,30 +84,11 @@ form.form1 {
   border: 2px solid rgba(0, 0, 0, 0.18) !important;
 }
 
-.email {
-  width: 76%;
-  color: rgb(38, 50, 56);
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 1px;
-  background: rgb(255, 255, 255);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 20px;
-  outline: none;
-  box-sizing: border-box;
-  border: 2px solid rgba(0, 0, 0, 0.02);
-  margin-bottom: 50px;
-  margin-left: 46px;
-  text-align: center;
-  margin-bottom: 27px;
-}
-
 .submit {
   cursor: pointer;
   border-radius: 5em;
   color: #fff;
-  background: linear-gradient(to right, #2795b0, #40fb50);
+  background: linear-gradient(to right, #2795b0, #40fb50) !important;
   border: 0;
   padding-left: 50px;
   padding-right: 70px;
@@ -130,22 +96,22 @@ form.form1 {
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
-  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04) !important;
   white-space: 10px;
 }
 
 .forgot {
-  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-  color: #4b9a82;
+  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12) !important;
+  color: #4b9a82 !important;
   padding-top: 15px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0) !important;
 }
 
 a {
-  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-  color: #409f94;
+  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12) !important;
+  color: #409f94 !important;
   text-decoration: none;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0) !important;
   margin-left: 18px;
 }
 
@@ -167,7 +133,7 @@ a {
   height: 650px;
   left: 43%;
   top: 60px;
-  filter: drop-shadow(10px 20px 5px #42976a80);
+  filter: drop-shadow(10px 20px 5px #42976a80) !important;
   transition: left 0.5s, top 0.5s;
   z-index: -1;
 }
@@ -188,7 +154,7 @@ svg.open {
 }
 
 .nav a {
-  color: black;
+  color: black !important;
   padding: 10px 16px;
   text-decoration: none;
   font-size: 17px;

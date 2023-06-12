@@ -5,9 +5,10 @@ import SearchBar from "../components/SearchBar";
 import { useState, useEffect } from "react";
 import { useLazyQuery } from "@apollo/client";
 
+import "semantic-ui-css/semantic.min.css";
+import "../styles/listings.css";
 
-
-
+import { Divider } from "semantic-ui-react";
 
 const Listings = () => {
   const [search, setSearch] = useState("");
@@ -19,12 +20,13 @@ const Listings = () => {
     getListings({
       variables: { zip: search },
     });
-  }, [search])
+  }, [search]);
 
   return (
     <section>
-
-      <div class="logo"> <img src="/SIX_A740A84A-04FC-4CC6-9EA0-FF579F6ACC20.PNG" alt="" />
+      <div className="logo">
+        {" "}
+        <img src="/SIX_A740A84A-04FC-4CC6-9EA0-FF579F6ACC20.PNG" alt="" />
       </div>
       <svg
         id="corner"
@@ -45,17 +47,9 @@ const Listings = () => {
 
       <SearchBar search={search} setSearch={setSearch} />
       <Card listings={listings} />
-
+      <Divider vertical></Divider>
     </section>
   );
 };
-
-
-
-
-
-
-
-
 
 export default Listings;

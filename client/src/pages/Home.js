@@ -2,8 +2,6 @@ import React from "react";
 import { loggedIn, logout } from "../utils/auth";
 import { useNavigate, Link } from "react-router-dom";
 
-
-
 const Home = () => {
   const navigate = useNavigate();
 
