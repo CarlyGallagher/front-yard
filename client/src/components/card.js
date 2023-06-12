@@ -17,7 +17,7 @@ function Card({ listings }) {
         <Grid.Column computer={5} mobile={12} className="card-container">
           <div key={listing._id} className="card" id={listing._id}>
             <div className="title">
-              <Header as='h1'>{listing.title}</Header>
+              <Header as="h1">{listing.title}</Header>
             </div>
             <div className="img-container">
               <img
@@ -39,8 +39,8 @@ function Card({ listings }) {
                 </li>
               </ul>
               <div>
-                <p>Post createdAt: {listing.createdAt}</p>
-                <p>Post By: {listing.username}</p>
+                <p>listed by {listing.username}</p>
+                <p>on {listing.createdAt}</p>
               </div>
             </div>
             <div className="card-footer">
