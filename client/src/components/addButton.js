@@ -12,12 +12,12 @@ export default function AddButton() {
     setClicked(!clicked);
 
     return <AddListing />;
-
   };
 
   return (
     <div className="add-btn">
       <Modal
+        className="add-btn-modal"
         trigger={
           <Button className="add-btn-stuff" onClick={handleClick}>
             <Button.Content visible className="add-btn-body">
@@ -26,8 +26,7 @@ export default function AddButton() {
           </Button>
         }
       >
-        <Modal.Header>Add a Listing</Modal.Header>
-        <Modal.Content>
+        <Modal.Content className="modal-cont">
           <AddListing />
         </Modal.Content>
       </Modal>

@@ -10,24 +10,57 @@
 
 .add-btn-stuff {
   padding: none !important;
-  background: linear-gradient(
-    -45deg,
-    #0c4b44,
-    #52e1b4
-  ) !important;
+  background: linear-gradient(-45deg, #0c4b44, #52e1b4) !important;
 }
 
 .add-btn-stuff:hover {
-  background: linear-gradient(
-    -45deg,
-    #06312b,
-    #3ab697
-  ) !important;
+  background: linear-gradient(-45deg, #06312b, #3ab697) !important;
 }
 
 .add-btn-stuff:hover > .add-btn-body {
   transform: scale(1.3);
   transition: 200ms ease-in-out;
+}
+
+.modal-header {
+  font-size: 3rem;
+  font-weight: 100;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+  background-color: rgb(17, 17, 17) !important;
+  text-align: center;
+  background: -webkit-linear-gradient(-45deg, #0c4b44, #52e1b4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.modal-cont {
+  background-color: rgb(17, 17, 17) !important;
+  text-align: center;
+}
+
+.modal-form {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+
+.modal-section {
+  margin: 2rem 0;
+}
+
+.modal-section label {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+  margin-right: 1%;
+  color: rgb(207, 211, 219) !important;
+}
+
+.modal-input {
+  background-color: rgb(17, 17, 17) !important;
+  color: rgb(207, 211, 219) !important;
+  border: solid 3px black !important;
+  border-radius: 25px;
+  padding-left: 2%;
 }
 
 @media screen and (max-width: 600px) {
@@ -38,10 +71,6 @@
 
   .add-btn-stuff {
     padding: none !important;
-    background: linear-gradient(
-      -45deg,
-      #4b0c1b,
-      #e1526a
-    ) !important;
+    background: linear-gradient(-45deg, #4b0c1b, #e1526a) !important;
   }
 }

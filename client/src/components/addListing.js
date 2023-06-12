@@ -50,8 +50,8 @@ export default function AddListing () {
 
   return (
     <>
-      <h2>Add a Listing</h2>
-      <form onSubmit={handleFormSubmit}>
+      <h2 className="modal-header">Add a Listing</h2>
+      <form onSubmit={handleFormSubmit} className="modal-form modal-section">
         <div className="flex-row space-between my-2">
           <label htmlFor="title">Title:</label>
           <input
@@ -60,9 +60,10 @@ export default function AddListing () {
             type="title"
             id="title"
             onChange={handleChange}
+            className="modal-input"
           />
         </div>
-        <div className="flex-row space-between my-2">
+        <div className="flex-row space-between my-2 modal-section">
           <label htmlFor="description">Description:</label>
           <input
             placeholder="Description"
@@ -70,9 +71,10 @@ export default function AddListing () {
             type="description"
             id="description"
             onChange={handleChange}
+            className="modal-input"
           />
         </div>
-        <div className="flex-row space-between my-2">
+        <div className="flex-row space-between my-2 modal-section">
           <label htmlFor="zip">Zip:</label>
           <input
             placeholder="Zip"
@@ -80,6 +82,7 @@ export default function AddListing () {
             type="zip"
             id="zip"
             onChange={handleChange}
+            className="modal-input"
           />
         </div>
         <div className="flex-row flex-end">
