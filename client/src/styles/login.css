@@ -22,12 +22,10 @@ body {
   display: inline-block;
 }
 
-.h1 {
+h1 {
   color: #fff !important;
   font-size: 15px;
   text-align: center;
-  padding: none;
-  margin: none;
 }
 
 .sign {
