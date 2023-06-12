@@ -1,0 +1,18 @@
+.add-btn {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+}
+
+.add-btn:hover {
+  cursor: pointer;
+}
+
+.add-btn-stuff {
+  padding: none !important;
+  background: linear-gradient(
+    -45deg,
+    #0c4b44,
+    #52e1b4
+  ) !important;
+}
