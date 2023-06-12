@@ -7,11 +7,11 @@ export default function AddListing () {
   const [formState, setFormState] = useState({
     title: "",
     description: "",
-    price: "",
+    price: 0,
     zip: "",
   });
 
-  const [addListing, { error }] = useMutation(ADD_LISTING, {
+  const [addListing, error] = useMutation(ADD_LISTING, {
     update(cache, { data: { addListing } }) {
       try {
         const { listings } = cache.readQuery({ query: QUERY_LISTINGS });
