@@ -4,7 +4,7 @@ import { useMutation } from "@apollo/client";
 import { LOGIN_USER } from "../utils/mutations";
 import { login } from "../utils/auth";
 
-import { Form, Button } from "semantic-ui-react";
+import { Form, Header } from "semantic-ui-react";
 
 import "../styles/login.css";
 
@@ -71,7 +71,9 @@ const Login = () => {
             {" "}
             <img src="/SIX_A740A84A-04FC-4CC6-9EA0-FF579F6ACC20.PNG" alt="" />
           </div>
-          <h1>Welcome Back</h1>
+          <Header as="h1" className="h1">
+            Welcome Back
+          </Header>
           <svg id="blob" viewBox="0 0 200 200">
             <path
               fill="#33ceaa"
@@ -80,8 +82,8 @@ const Login = () => {
             />
           </svg>
           <div class="card">
-            <Form>
-              <Form.Field className="field">
+            <Form className="form1" onSubmit={handleFormSubmit}>
+              <Form.Field className="">
                 <input
                   className="input"
                   placeholder="Your email"
@@ -91,7 +93,7 @@ const Login = () => {
                   onChange={handleChange}
                 />
               </Form.Field>
-              <Form.Field className="field">
+              <Form.Field className="">
                 <input
                   className="input"
                   placeholder="password"
@@ -101,13 +103,13 @@ const Login = () => {
                   onChange={handleChange}
                 />
               </Form.Field>
-              <Button
+              <button
                 className="submit"
                 type="submit"
                 onSubmit={handleFormSubmit}
               >
-                Register
-              </Button>
+                Login
+              </button>
             </Form>
             <Link to="/signup">
               <p className="forgot">Create an account</p>

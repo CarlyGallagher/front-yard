@@ -23,9 +23,8 @@ body {
 }
 
 h1 {
-  color: #fff;
+  color: #fff !important;
   font-size: 15px;
-  justify-content: center;
   text-align: center;
 }
 
@@ -39,15 +38,14 @@ h1 {
 }
 
 form.form1 {
-  align-content: center;
-  padding: 20px 50px;
   background-color: rgb(0, 0, 0) !important;
-  margin-top: 40px;
+  margin-top: 30%;
 }
 
 .field {
   background-color: rgb(0, 0, 0) !important;
   display: block;
+  padding: 0 50px;
 }
 
 .input {
