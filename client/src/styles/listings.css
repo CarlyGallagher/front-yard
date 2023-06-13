@@ -20,13 +20,14 @@ body {
   padding: 55px;
   color: white;
   padding-left: 80px;
-  z-index: 0;
+  z-index: -999;
 }
 
 .logo {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  z-index: 100;
 }
 
 .card {
