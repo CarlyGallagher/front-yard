@@ -6,7 +6,8 @@
     "image": "/images/mattress.jpg",
     "zip": "92571",
     "createdAt": "2023-06-05T04:00:00.000Z",
-    "isTaken": false
+    "isTaken": false,
+    "username": "FakeJoshTaylor"
   },
   {
     "title": "Dis dresser",
@@ -15,7 +16,8 @@
     "image": "https://i.imgur.com/5tjv6Bt.jpg",
     "zip": "55555",
     "createdAt": "2023-06-05T04:00:00.000Z",
-    "isTaken": false
+    "isTaken": false,
+    "username": "RealIvo"
   },
   {
     "title": "Go kart",
@@ -24,7 +26,8 @@
     "image": "https://i.imgur.com/5tjv6Bt.jpg",
     "zip": "55555",
     "createdAt": "2023-06-05T04:00:00.000Z",
-    "isTaken": false
+    "isTaken": false,
+    "username": "FakeElonMusk"
   },
   {
     "title": "Ivo",
@@ -33,6 +36,7 @@
     "image": "https://i.imgur.com/5tjv6Bt.jpg",
     "zip": "55555",
     "createdAt": "2023-06-05T04:00:00.000Z",
-    "isTaken": false
+    "isTaken": false,
+    "username": "RealCristianoRonaldo"
   }
 ]

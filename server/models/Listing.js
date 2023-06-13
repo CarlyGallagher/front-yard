@@ -28,7 +28,7 @@ const listingSchema = new Schema({
     get: (timestamp) => dateFormat(timestamp),
   },
   username: {
-    type: Schema.Types.ObjectId,
+    type: String,
     ref: "User",
   },
   isTaken: {
