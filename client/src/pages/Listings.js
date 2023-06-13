@@ -5,6 +5,8 @@ import SearchBar from "../components/SearchBar";
 import AddButton from "../components/addButton";
 import { useLazyQuery } from "@apollo/client";
 
+import { Button } from "semantic-ui-react";
+
 import "semantic-ui-css/semantic.min.css";
 import "../styles/listings.css";
 
@@ -24,6 +26,9 @@ const Listings = () => {
     <div className="container">
       {" "}
       <SearchBar search={search} setSearch={setSearch} />
+      <Button
+        className="log-btn"
+      >Logout</Button>
       <section className="blobs">
         <div className="logo">
           <img src="/SIX_A740A84A-04FC-4CC6-9EA0-FF579F6ACC20.PNG" alt="" />
