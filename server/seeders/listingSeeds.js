@@ -1,9 +1,9 @@
-[
+let listings = [
   {
     "title": "My old mattress",
     "description": "I don't need it anymore.",
     "price": 1,
-    "image": "https://i.imgur.com/5tjv6Bt.jpg",
+    "image": "/images/mattress.jpg",
     "zip": "92571",
     "createdAt": "2023-06-05T04:00:00.000Z",
     "isTaken": false
@@ -35,4 +35,8 @@
     "createdAt": "2023-06-05T04:00:00.000Z",
     "isTaken": false
   }
-]
+];
+
+module.exports = {
+  listings
+}

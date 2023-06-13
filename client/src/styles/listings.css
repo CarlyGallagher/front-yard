@@ -7,6 +7,10 @@ body {
   color: white !important;
 }
 
+#btm {
+  padding-bottom: 20%;
+}
+
 .blobs {
   position: relative;
   grid-auto-rows: auto;
@@ -18,7 +22,6 @@ body {
   padding-left: 80px;
   z-index: 0;
 }
-
 
 .logo {
   width: 100px;
@@ -48,4 +51,36 @@ button {
 
 .listSearch {
   z-index: 100;
+  position: absolute;
+  background-color: rgb(0, 91, 63);
+  border-radius: 25px;
+  left: 10%;
+  top: 10%;
+  margin: none;
+  padding: 1px 15px;
+  width: 300px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gill Sans Bold", sans-serif !important;
+}
+
+.form-control {
+  background-color: rgb(17, 17, 17);
+  border: none;
+  color: rgb(176, 176, 176);
+  border-radius: 25px;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .listSearch {
+    left: 15%;
+  }
+
+  .card {
+    box-shadow: none;
+  }
 }

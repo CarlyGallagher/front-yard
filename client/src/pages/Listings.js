@@ -8,8 +8,6 @@ import { useLazyQuery } from "@apollo/client";
 import "semantic-ui-css/semantic.min.css";
 import "../styles/listings.css";
 
-import { Divider, Grid } from "semantic-ui-react";
-
 const Listings = () => {
   const [search, setSearch] = useState("");
 
@@ -23,7 +21,8 @@ const Listings = () => {
   }, [search]);
 
   return (
-    <div>
+    <div className="container">
+      {" "}
       <SearchBar search={search} setSearch={setSearch} />
       <section className="blobs">
         <div className="logo">
@@ -46,7 +45,9 @@ const Listings = () => {
           </g>
         </svg>
       </section>
-      <Card listings={listings} />
+          <Card listings={listings} />
+      <AddButton />
+      <div id="btm"></div>
     </div>
   );
 };
