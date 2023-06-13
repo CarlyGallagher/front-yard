@@ -14,7 +14,7 @@
     "description": "Someone take this dresser.",
     "price": 1,
     "image": "https://i.imgur.com/5tjv6Bt.jpg",
-    "zip": "55555",
+    "zip": "82571",
     "createdAt": "2023-06-05T04:00:00.000Z",
     "isTaken": false,
     "username": "RealIvo"
@@ -24,7 +24,7 @@
     "description": "My old ride from the 90s.",
     "price": 1,
     "image": "https://i.imgur.com/5tjv6Bt.jpg",
-    "zip": "55555",
+    "zip": "00001",
     "createdAt": "2023-06-05T04:00:00.000Z",
     "isTaken": false,
     "username": "FakeElonMusk"
@@ -38,5 +38,25 @@
     "createdAt": "2023-06-05T04:00:00.000Z",
     "isTaken": false,
     "username": "RealCristianoRonaldo"
+  },
+  {
+    "title": "Mandalorian helmet",
+    "description": "Only worn once... for 26 years.",
+    "price": 1,
+    "image": "https://i.imgur.com/5tjv6Bt.jpg",
+    "zip": "00315",
+    "createdAt": "2023-06-05T04:00:00.000Z",
+    "isTaken": false,
+    "username": "FakeDavidG"
+  },
+  {
+    "title": "Gangsta glasses",
+    "description": "Thug life.",
+    "price": 1,
+    "image": "https://i.imgur.com/5tjv6Bt.jpg",
+    "zip": "21390",
+    "createdAt": "2023-06-05T04:00:00.000Z",
+    "isTaken": false,
+    "username": "FakePedroPascal"
   }
 ]
