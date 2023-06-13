@@ -26,6 +26,8 @@ Front-Yard-Freeloaders is an e-commerce website that allows users to post their 
 
 ## Screenshots
 
+![Screenshot of Front-Yard-Freeloaders](./client/public/images/project_3.png)
+
 ## Technologies Used
 
 <p><a href="https://reactjs.org/">React.js</a></p>
