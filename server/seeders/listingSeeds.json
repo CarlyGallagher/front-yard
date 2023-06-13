@@ -1,4 +1,4 @@
-let listings = [
+[
   {
     "title": "My old mattress",
     "description": "I don't need it anymore.",
@@ -35,8 +35,4 @@ let listings = [
     "createdAt": "2023-06-05T04:00:00.000Z",
     "isTaken": false
   }
-];
-
-module.exports = {
-  listings
-}
+]
